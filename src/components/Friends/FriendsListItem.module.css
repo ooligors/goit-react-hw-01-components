@@ -6,7 +6,7 @@
 .item {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 10px;
   border: 1px solid #e6e6e6;
   margin-bottom: 10px;

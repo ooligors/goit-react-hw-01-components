@@ -13,7 +13,7 @@ export const THead = styled.thead`
 `;
 export const Th = styled.th`
   width: calc(100% / 3);
-  text-align: start;
+  text-align: flex-start;
   border: 2px solid #fff;
   border-radius: 5px;
   padding: 15px;
@@ -27,7 +27,7 @@ export const TrMap = styled.tr`
 export const Td = styled.td`
   width: calc(100% / 3);
   padding: 15px;
-   text-align: start;
+   text-align: flex-start;
   color: #aa8ea7;
   border: 1px solid #45ebeb;
    padding-left: 35px;
