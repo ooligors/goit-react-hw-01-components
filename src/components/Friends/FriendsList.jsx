@@ -6,8 +6,8 @@ import css from './FriendsList.module.css';
 export const FriendsList = ({friends}) => {
     console.log(friends);
     return (<ul className={css.friendList}>
-        {friends.map(friend => (
-        <FriendsListItem avatar={friend.avatar} name={friend.name} isOnline={friend.isOnline} key={friend.id} />
+        {friends.map(({avatar,name,isOnline,id}) => (
+        <FriendsListItem avatar={avatar} name={name} isOnline={isOnline} key={id} />
             
           
  ))}
@@ -16,6 +16,12 @@ export const FriendsList = ({friends}) => {
 };
  
 FriendsList.propTypes = {
-friends: PropTypes.arrayOf(PropTypes.object).isRequired,
+    friends: PropTypes.arrayOf(PropTypes.shape({
+        avatar: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired,
+    })
+    ).isRequired,
 };
 // style={{ backgroundColor: isOnline ? " #54d35d" : " #cb2219" }}

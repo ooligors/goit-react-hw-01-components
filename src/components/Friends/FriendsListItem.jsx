@@ -7,7 +7,7 @@ export const FriendsListItem = ({ avatar, name, isOnline }) => {
     return (
         <li className={css.item} >
         
-            <span className={css.status} style={{ backgroundColor: isOnline ? "#1ee81e" : "#d13815" }}>{isOnline}</span>
+            <span className={css.status} style={{ backgroundColor: isOnline ? "#1ee81e" : "#d13815" }} >{isOnline}</span>
             <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
             <p className={css.name}>{name}</p>
         </li>)

@@ -14,7 +14,10 @@
 }
 .status {
   margin-right: 25px;
+  /* style={{ backgroundColor: isOnline ? "#1ee81e" : "#d13815" }} */
+  /* background: ${props => (props.isOnline ? "#1ee81e" : "#d13815")}; */
 }
+
 .avatar {
   width: 50px;
   margin-right: 25px;
